@@ -98,9 +98,23 @@
       background-color: rgba(170, 92, 219, 0.5);
     }
 
-
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
+
+    /* Mobile Responsive */
+    @media (max-width: 768px) {
+      .container {
+          flex-direction: column;
+          text-align: center;
+      }
+      .result-card {
+          padding: 30px;
+      }
+      .image-card {
+          height: 250px;
+      }
+    }
+
   </style>
 </head>
 <body>
@@ -136,8 +150,7 @@
 
     <!-- Right Panel - image -->
     <div class="image-card">
-        
-        <img src="./images/image-header-desktop.jpg" alt="">
+        <img src="./images/image-header-desktop.jpg" alt="header image desktop size">
     </div>
   </div>
 
